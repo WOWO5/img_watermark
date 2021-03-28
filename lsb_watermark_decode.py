@@ -1,5 +1,6 @@
 from PIL import Image
 
+
 def deEncry(img, length):
     width = img.size[0]
     height = img.size[1]
@@ -31,6 +32,7 @@ def deEncry(img, length):
         if count == length: break
     return wt
 
+
 def showImage(wt):
     str_decode = []
     for i in range(0, len(wt), 8):
@@ -43,7 +45,8 @@ def showImage(wt):
             flag += 1
     img_out.show()
 
-img = Image.open('watermark_img.png')
+
+img = Image.open('img/watermark_img.png')
 img_rgb = img.convert('RGB')
 length = 320000
 wt = deEncry(img_rgb, length)

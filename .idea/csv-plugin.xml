@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\lsb_watermark_decode.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\watermark_decode.py">
           <value>
             <Attribute>

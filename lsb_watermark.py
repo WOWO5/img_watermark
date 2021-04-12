@@ -90,10 +90,10 @@ def showImage(wt):
     str_decode = []
     for i in range(0, len(wt), 8):
         str_decode.append(int(wt[i:i + 8], 2))  # 将二进制序列转换为十进制
-    img_out = Image.new("L", (120, 120))
+    img_out = Image.new("L", (32, 32))
     flag = 0
-    for m in range(0, 120):
-        for n in range(0, 120):
+    for m in range(0, 32):
+        for n in range(0, 32):
             img_out.putpixel((m, n), str_decode[flag])
             flag += 1
     img_out.save('img/water_img.png')
